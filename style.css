@@ -1,133 +1,124 @@
-*{
-    margin: 0px;
+* {
+    margin: 0;
     font-family: poppins;
 }
-body{
+
+body {
     background-color: #44444E;
-
 }
-/* .body
-{
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-} */
-#navtext{
-    background-color: #132440;
-    
-}
-.navbar{
+/* NAVBAR */
+.navbar {
     background-color: #132440;
     height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #E0D9D9;
-}   
-.options{
-    width: 60%;
-    height: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1vw;
-    color: aliceblue;
-    
 }
-.option{
-    transition: 0.2s ease;
-    height: 15vw;
-    width: 15vw;
-}
-.option:hover{
-      box-shadow: 0px 0px 30px rgb(227, 227, 227);
-     
-}
-#Rock{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #EA2264;
-    border-radius: 25%;
-}
-#Paper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #640D5F;
-    border-radius: 25%;
-}
-#Scissors{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0F828C;
-    border-radius: 25%;
-}
-.circles{
-    /* height: 60%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.scoreboard{
+
+/* SCOREBOARD */
+.scoreboard {
     color: whitesmoke;
-    margin-left: 25%;
-    display: flex;
-    width: 50%;
-    height: 10vw;
-    justify-content: center;
-    align-items: center;
-}
-.score{
-    display: flex;
-    width: 50%;
-    height: 5vw;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #393E46;
-    border-radius: 20px;
-    
-    font-size: 1vw;
-}
-.msg-container{
-    
-    transition: 0.2s;
-    display: flex;
-    height: 5vw;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #393E46;
-    border-radius: 20px;
-    color: whitesmoke;
-    width: 50%;
-    font-size: 2vw;
-    margin-left: 25%;
-}
-.msgcont{
-    display: flex;
-    margin-left: 25%;
-    margin-top: 2vw;
-    width: 50%;
-    align-items: center;
-    height: 7.6vw;
-    
-}
-/*@media screen  and (max-width:500px) {
-.options{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.score {
+    display: flex;
+    width: 80%;
+    max-width: 500px;
+    padding: 1rem;
+    justify-content: space-evenly;
     align-items: center;
-    font-size: 12.5px;
+    background-color: #393E46;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+/* CHOICES */
+.circles {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.options {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
     color: aliceblue;
-    
 }
-.option{
+
+.option {
+    height: 140px;
+    width: 140px;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: 0.2s ease;
-    height: 7.5rem;
-    width: 7.5rem;
+    text-align: center;
 }
-}*/
+
+.option:hover {
+    box-shadow: 0px 0px 20px rgb(227, 227, 227);
+}
+
+#Rock {
+    background-color: #EA2264;
+}
+#Paper {
+    background-color: #640D5F;
+}
+#Scissors {
+    background-color: #0F828C;
+}
+
+/* MESSAGE BOX */
+.msgcont {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.msg-container {
+    width: 80%;
+    max-width: 500px;
+    padding: 1rem;
+    background-color: #393E46;
+    border-radius: 20px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.4rem;
+    transition: 0.2s;
+}
+
+/* ----------------------- */
+/* RESPONSIVE DESIGN BELOW */
+/* ----------------------- */
+@media (max-width: 600px) {
+
+    .options {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .option {
+        width: 100px;
+        height: 100px;
+        font-size: 0.9rem;
+    }
+
+    .msg-container {
+        font-size: 1.2rem;
+    }
+
+    .score {
+        font-size: 1rem;
+    }
+}
