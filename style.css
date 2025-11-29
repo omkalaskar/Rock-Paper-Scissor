@@ -2,7 +2,11 @@
     margin: 0px;
     font-family: poppins;
 }
-body{
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-color: #44444E;
 
 }
@@ -30,7 +34,7 @@ body{
 }
 .option:hover{
       box-shadow: 0px 0px 30px rgb(227, 227, 227);
-      position: inherit;
+     
 }
 #Rock{
     display: flex;
@@ -54,7 +58,7 @@ body{
     border-radius: 25%;
 }
 .circles{
-    height: 50vw;
+    height: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,16 +67,15 @@ body{
     color: whitesmoke;
     margin-left: 25%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     width: 50%;
-    height: 100px;
+    height: 10vw;
+    justify-content: center;
+    align-items: center;
 }
 .score{
     display: flex;
     width: 50%;
     height: 5vw;
-    margin-top: 10vw;
     justify-content: space-evenly;
     align-items: center;
     background-color: #393E46;
@@ -81,17 +84,26 @@ body{
     font-size: 1vw;
 }
 .msg-container{
+    
     transition: 0.2s;
     display: flex;
-    width: 50%;
-    height: 80px;
+    height: 5vw;
     justify-content: space-evenly;
     align-items: center;
     background-color: #393E46;
     border-radius: 20px;
-    margin-left: 25%;
     color: whitesmoke;
+    width: 50%;
     font-size: 2vw;
+    margin-left: 25%;
+}
+.msgcont{
+    display: flex;
+    margin-left: 25%;
+    width: 50%;
+    align-items: center;
+    height: 7.5vw;
+    
 }
 /*@media screen  and (max-width:500px) {
 .options{
